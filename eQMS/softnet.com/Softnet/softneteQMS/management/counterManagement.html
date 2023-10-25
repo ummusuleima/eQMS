@@ -174,13 +174,15 @@
                         class="menu-arrow"><span class="material-icons">
                           keyboard_arrow_right
                           </span></span></a>
-                <ul class="nav-second-level" aria-expanded="false">
-                    <li class="nav-item"><a class="nav-link" href="reportOne.html"><i
-                        class="ti-control-record"></i>Report One</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reportTwo.html"><i
-                            class="ti-control-record"></i>Report Two</a></li>
-                    
-                </ul>
+                          <ul class="nav-second-level" aria-expanded="false">
+                            <li class="nav-item"><a class="nav-link" href="generalreport.html"><i
+                                class="ti-control-record"></i>General Report</a></li>
+                            <li class="nav-item"><a class="nav-link" href="statisticalreport.html"><i
+                                    class="ti-control-record"></i>Statistical Report</a></li>
+                             <li class="nav-item"><a class="nav-link" href="transactionalreport.html"><i
+                                        class="ti-control-record"></i>Transactional Report</a></li>
+                            
+                        </ul>
             </li>
         </ul>
     </div><!-- end left-sidenav-->
@@ -190,13 +192,13 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="page-title-box">
-                            <div class="float-right">
+                            <!--div class="float-right">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="javascript:void(0);" style="color: black;">eQMS</a></li>
                                 
                                     <li class="breadcrumb-item active">Manage Counter</li>
                                 </ol>
-                            </div>
+                            </div-->
                             <h4 class="page-title" style="color: black; ">COUNTER MANAGEMENT</h4>
                         </div><!--end page-title-box-->
                     </div><!--end col-->
@@ -209,7 +211,7 @@
                 <button type="button" class="btn btn-lg btn-primary text-white" style="margin-left: 1000px;" onclick="$('#create_service').show('fast');">
                         Export
                         </button>
-                <button type="button" class="btn btn-lg btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal" style="margin-left:2px;" >
+                <button type="button" class="btn btn-lg btn-success text-white" data-toggle="modal" data-target="#addCounterModal" style="margin-left:2px;" >
                   Add Counter
                   </button>  
                 
@@ -232,16 +234,12 @@
                     <label for="selectAll"></label>
                   </span>
                 </th>
-                <th>User ID</th>
-                <th>First Name</th>
-                <th>Second Name</th>
-                <th>Last Name</th>
-               
-                 <th>Gender</th>
+                <th>Counter ID</th>
+                <th>Counter Name</th>
+                 <th>Counter Branch </th>
                  <th>Address</th>
                  <th>Country</th>
-                 <th>Phone Number</th>
-                 <th>Role</th>
+              
                 
                 <th>Actions</th>
               </tr>
@@ -255,23 +253,23 @@
                   </span>
                 </td>
                 <td>001</td>
-                <td>Augostino</td>
-                <td>Pascal</td>
-                <td>Mrema</td>
+                <td>Counter part1</td>
+                <td>GSM Branch</td>
+              
                 
-                  <td>Male</td>
+                  
                   <td>Dar-es salaam</td>
                    <td>Tanzania</td>
-                   <td>0778-965434</td>
-                   <td>Senior Advocate</td>
+                  
+                   
                   
                 <td>
                     
                  
-                  <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><span class="material-icons">
+                  <a href="#editCounterModal" class="edit" data-toggle="modal" title="Edit Counter"><span class="material-icons">
                     edit
                     </span></a>
-                  <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><span class="material-icons">
+                  <a href="#deleteCounterModal" class="delete" data-toggle="modal" title="Deactivate Counter"><span class="material-icons">
                   delete
                     </span></a>
                 </td>
@@ -290,7 +288,7 @@
 
 
     <!-- Add Modal HTML -->
-  <div id="addEmployeeModal" class="modal fade">
+  <div id="addCounterModal" class="modal fade">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <form>
@@ -311,7 +309,7 @@
     
                     <div class="col-md-6 col-12">
                       <div class="form-group">
-                        <label for="full-name-column">First Name</label>
+                        <label for="full-name-column">Counter ID</label>
                         <input
                           type="text"
                           id="full-name-column"
@@ -323,7 +321,7 @@
                     </div>
                     <div class="col-md-6 col-12">
                         <div class="form-group">
-                          <label for="full-name-column">Middle Name</label>
+                          <label for="full-name-column">Counter Name</label>
                           <input
                             type="text"
                             id="full-name-column"
@@ -335,7 +333,7 @@
                       </div>
                       <div class="col-md-6 col-12">
                         <div class="form-group">
-                          <label for="full-name-column">Last Name</label>
+                          <label for="full-name-column">Counter Branch</label>
                           <input
                             type="text"
                             id="full-name-column"
@@ -345,29 +343,8 @@
                           />
                         </div>
                       </div>
-                    
-                    <div class="col-md-6 col-12">
-                       <div class="form-group">
-                        <label for="email-id-column">Email</label>
-                        <input
-                          type="email"
-                          id="email-id-column"
-                          class="form-control"
-                          name="email-id-column"
-                          placeholder="email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="company-column">Gender</label>
-                     <select class="form-control" id="basicSelect">
-                    <option>Choose Gender</option>
-                    <option>Male </option>
-                    <option>Female</option>
-                  </select>
-                      </div>
-                    </div>
+                   
+                   
                     <div class="col-md-6 col-12">
                       <div class="form-group">
                         <label for="country-floating">Address</label>
@@ -393,31 +370,9 @@
                         />
                       </div>
                   </div>
-                  <div class="col-md-6 col-12">
-                    <div class="form-group">
-                      <label for="email-id-column">Phone Number</label>
-                      <input
-                        type="text"
-                        id="email-id-column"
-                        class="form-control"
-                        name="email-id-column"
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                </div>
+                 
     
-                        <div class="col-md-6 col-12">
-                          <div class="form-group">
-                            <label for="email-id-column">Role</label>
-                            <select class="form-control" id="basicSelect">
-                                <option>Choose Role</option>
-                                <option>Receptionist</option>
-                                <option>Advocate</option>
-                                <option>Senior advocate</option>
-                               
-                              </select>
-                          </div>
-                      </div>
+                        
                     
                    
                   </div>
