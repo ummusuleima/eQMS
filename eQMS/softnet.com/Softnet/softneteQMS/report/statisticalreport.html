@@ -152,24 +152,16 @@
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="javascript:void(0);" style="color: black;">eQMS</a></li>
                             
-                                <li class="breadcrumb-item active">Manage User</li>
+                                <li class="breadcrumb-item active">Statistical Report</li>
                             </ol>
                         </div>
-                        <h4 class="page-title" style="color: black; ">USER MANAGEMENT</h4>
+                        <h4 class="page-title" style="color: black; ">STATISTICAL REPORT</h4>
                     </div><!--end page-title-box-->
                 </div><!--end col-->
             </div><!-- end page title end breadcrumb -->
         </div><!-- container -->
         
-        <div style="padding-bottom: 5px;">
-          <button type="button" class="btn btn-lg btn-primary text-white" style="margin-left: 1000px;" onclick="$('#create_service').show('fast');">
-                  Export
-                  </button>
-          <button type="button" class="btn btn-lg btn-success text-white" data-toggle="modal" data-target="#addEmployeeModal" style="margin-left:10px;" >
-            Add User
-            </button>  
-                  
-        </div>
+        
 
             
                 
@@ -203,7 +195,7 @@
                  <th>Phone Number</th>
                  <th>Role</th>
                 
-                <th>Actions</th>
+               
               </tr>
             </thead>
             <tbody>
@@ -225,16 +217,7 @@
                    <td>0778-965434</td>
                    <td>Senior Advocate</td>
                   
-                <td>
-                    
-                 
-                  <a href="#editEmployeeModal" class="edit" data-toggle="modal" title="Edit Client"><span class="material-icons">
-                    edit
-                    </span></a>
-                  <a href="#deleteEmployeeModal" class="delete" data-toggle="modal" title="Deactivate Client"><span class="material-icons">
-                  delete
-                    </span></a>
-                </td>
+               
               </tr>
          
     
@@ -251,153 +234,7 @@
 
 
 
-    <!-- Add Modal HTML -->
-  <div id="addEmployeeModal" class="modal fade">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <form>
-              <div class="modal-header " style="background-color: blue;">            
-                <h4 class="modal-title" style="color:#fff !important;">Add User</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-              </div>
-              <div class="modal-body">          
-         <section id="multiple-column-form">
-        <div class="row">
-          <div class="col-12">
-             
-                <form class="form">
-                  <div class="row">
-                    
-    
-                    
-    
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="full-name-column">First Name</label>
-                        <input
-                          type="text"
-                          id="full-name-column"
-                          class="form-control"
-                          placeholder="Full Name"
-                          name="fname-column"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="form-group">
-                          <label for="full-name-column">Middle Name</label>
-                          <input
-                            type="text"
-                            id="full-name-column"
-                            class="form-control"
-                            placeholder="Full Name"
-                            name="fname-column"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-12">
-                        <div class="form-group">
-                          <label for="full-name-column">Last Name</label>
-                          <input
-                            type="text"
-                            id="full-name-column"
-                            class="form-control"
-                            placeholder="Full Name"
-                            name="fname-column"
-                          />
-                        </div>
-                      </div>
-                    
-                    <div class="col-md-6 col-12">
-                       <div class="form-group">
-                        <label for="email-id-column">Email</label>
-                        <input
-                          type="email"
-                          id="email-id-column"
-                          class="form-control"
-                          name="email-id-column"
-                          placeholder="email"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="company-column">Gender</label>
-                     <select class="form-control" id="basicSelect">
-                    <option>Choose Gender</option>
-                    <option>Male </option>
-                    <option>Female</option>
-                  </select>
-                      </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="country-floating">Address</label>
-                        <input
-                          type="text"
-                          id="country-floating"
-                          class="form-control"
-                          name="country-floating"
-                          placeholder="address"
-                        />
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-12">
-                      <div class="form-group">
-                        <label for="email-id-column">Country</label>
-                        <input
-                          type="text"
-                          id="email-id-column"
-                          class="form-control"
-                          name="email-id-column"
-                          placeholder="country"
-                        />
-                      </div>
-                  </div>
-                  <div class="col-md-6 col-12">
-                    <div class="form-group">
-                      <label for="email-id-column">Phone Number</label>
-                      <input
-                        type="text"
-                        id="email-id-column"
-                        class="form-control"
-                        name="email-id-column"
-                        placeholder="Phone Number"
-                      />
-                    </div>
-                </div>
-    
-                        <div class="col-md-6 col-12">
-                          <div class="form-group">
-                            <label for="email-id-column">Role</label>
-                            <select class="form-control" id="basicSelect">
-                                <option>Choose Role</option>
-                                <option>Receptionist</option>
-                                <option>Advocate</option>
-                                <option>Senior advocate</option>
-                               
-                              </select>
-                          </div>
-                      </div>
-                    
-                   
-                  </div>
-                </form>
-              
-            
-          </div>
-        </div>
-      </section>         
-              </div>
-              <div class="modal-footer">
-                <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                <input type="submit" class="btn btn-success" value="Add">
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+   
      <footer class="footer text-center text-sm-left">&copy; 2020 Softnet <span
       class="text-muted d-none d-sm-inline-block float-right">Crafted with <i
      class="mdi mdi-heart text-danger"></i> by Mannatthemes</span></footer><!--end footer-->

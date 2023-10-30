@@ -59,17 +59,18 @@
 </head>
 
 <body><!-- Top Bar Start -->
-
+  <div class="container">
     <div class="app-content content " >
         <div class="content-overlay"></div>
         <div class="header-navbar-shadow"></div>
+       
         <div class="content-wrapper">
           <div class="content-header row">
           </div>
-          <div class="content-body"><div class="auth-wrapper auth-v1 px-2" >
+          <div class="content-body"><div class="auth-wrapper auth-v1 px-2"  >
     <div class="auth-inner py-2">
       <!-- Login v1 -->
-      <div class="card mb-12" style="margin-left:300px ;">
+      <div class="card mb-12" style="margin-left:100px ;width: 375px;">
         <div class="card-body" style="width: 10cm;height: 11cm;">
           <a href="javascript:void(0);" class="brand-logo text-center">
             <img src="../assets/images/softnet logo.png" alt="eQMS" height="" width="150px" style="margin-left: 70px;">
@@ -80,36 +81,29 @@
           
   
           <form class="auth-login-form mt-2" action="https://pixinvent.com/demo/vuexy-html-bootstrap-admin-template/html/ltr/vertical-menu-template/index.html" method="POST">
-            <div class="form-group">
-              <label for="login-email" class="form-label">Email</label>
-              <input type="text" class="form-control" id="login-email" name="login-email" placeholder="john@example.com" aria-describedby="login-email" tabindex="1" autofocus />
-            </div>
-  
-            <div class="form-group">
-              <div class="d-flex justify-content-between">
-                <label for="login-password">Password</label>
-                <!-- <a href="forgot-password.html">
-                  <small>Forgot Password?</small>
-                </a> -->
+            <div class="input-group mb-3"><input type="text" class="form-control form-control-lg bg-light fs-6 " placeholder="Email adress"> <div class="input-group-append">
+              <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+            </div></div>
+            <div class="input-group mb-1"><input type="text" class="form-control form-control-lg bg-light fs-6 " placeholder="Password"  > <div class="input-group-append">
+              <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
+            </div></div>
+            <div class="input-group mb-2 d-flex justify-content-between">
+              <div class="form check">
+                <input type="checkbox" class="checkbox input" id="form check">
+                <label for="form check" class="form-check-label text-secondary"><small>Remember me</small></label>
+
               </div>
-              <div class="input-group input-group-merge form-password-toggle">
-                <input
-                  type="password" class="form-control form-control-merge" id="login-password" name="login-password" tabindex="2" placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;" aria-describedby="login-password"
-                />
-                <div class="input-group-append">
-                  <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
-                </div>
-              </div>
-            </div>
-           
-            <!-- <div class="form-group">
-              <div class="custom-control custom-checkbox">
-                <input class="custom-control-input" type="checkbox" id="remember-me" tabindex="3" />
-                <label class="custom-control-label" for="remember-me"> Remember Me </label>
-              </div>
-            </div> -->
-            <a href="../dashboard/helpdesk-index.html" class="btn btn-dark btn-block " style="color: blue;" tabindex="4" id="login">Login</a>
-            
+           <div class="forgot ">
+            <small > <a href=""> Forgot password</a></small>
+           </div>
+
+           <div class="input-group mb-3">
+            <button class="btn btn-lg btn-primary w-100 fs-6"><a href=../dashboard/helpdesk-index.html> Login </a></button>
+
+           </div>
+           <div class="row">
+            <small>Dont have Account? <a href=""> Sign Up</a></small>
+           </div>
           </form>
   
         </div>
@@ -120,7 +114,10 @@
   
           </div>
         </div>
+     
       </div>
+      </div>
+  
       <!-- END: Content-->
 
 
