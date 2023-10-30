@@ -41,6 +41,7 @@
 .left-sidenav-menu li > a {
   display: block;
   padding: 12px 24px;
+  margin-right: 5px;
   color: #5a5c61;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
